@@ -1,0 +1,13 @@
+</details>
+
+```txt
+torch>=1.12
+torchvision
+opencv-python
+numpy
+scikit-learn
+matplotlib
+dlib
+mtcnn
+tqdm
+Pillow
