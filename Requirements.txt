@@ -1,4 +1,3 @@
-```txt
 torch>=1.12
 torchvision
 opencv-python
