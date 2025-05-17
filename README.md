@@ -18,7 +18,7 @@ This project implements a custom deepfake detection pipeline that combines spati
 - or U can also use -->https://www.kaggle.com/code/hamditarek/deepfake-detection-challenge-kaggle/input For Training the Model 
 
 ## 📁 Project Structure
-
+```plaintext
 .
 ├── DATA/
 │ ├── FAKE/ # Sample deepfake videos
@@ -36,7 +36,7 @@ This project implements a custom deepfake detection pipeline that combines spati
 ├── train.py # Training script
 ├── Requirements.txt # Dependencies
 ├── README.md # Project documentation
-
+```
 ## 🧠 Model Architecture
 
 ```plaintext
@@ -55,23 +55,23 @@ Weighted Temporal Attention
 Sigmoid Classifier → [0 (Real), 1 (Fake)]
 
 
-
+```
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
+
 git clone https://github.com/Krishnakoushik21/Custom-Deepfake-Detection-Model.git
 cd Custom-Deepfake-Detection-Model
-2. Install dependencies
+
+###2. Install dependencies
 
 pip install -r Requirements.txt
 
-3. Run Training
-
+### 3. Run Training
 
 python train.py
 
-
-4. Run Evaluation
+### 4. Run Evaluation
 
 python utils/evaluate.py
