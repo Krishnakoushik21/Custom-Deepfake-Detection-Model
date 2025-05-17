@@ -13,24 +13,9 @@ This project implements a custom deepfake detection pipeline that combines spati
 
 ---
 
-## 🧠 Model Architecture
-
-```plaintext
-Input Video
-   │
-Frame Extraction & Face Detection
-   │
-Face Alignment & Cropping
-   │
-CNN Feature Extraction (ResNet18 / MobileNetV2)
-   │
-Sequence Modeling with BiLSTM
-   │
-Weighted Temporal Attention
-   │
-Sigmoid Classifier → [0 (Real), 1 (Fake)]
-
-
+## DataSet 
+- Get it from Kaggle -->https://www.kaggle.com/datasets/xdxd003/ff-c23
+- or U can also use -->https://www.kaggle.com/code/hamditarek/deepfake-detection-challenge-kaggle/input For Training the Model 
 
 ## 📁 Project Structure
 
@@ -52,9 +37,25 @@ Sigmoid Classifier → [0 (Real), 1 (Fake)]
 ├── Requirements.txt # Dependencies
 ├── README.md # Project documentation
 
+## 🧠 Model Architecture
+
+```plaintext
+Input Video
+   │
+Frame Extraction & Face Detection
+   │
+Face Alignment & Cropping
+   │
+CNN Feature Extraction (ResNet18 / MobileNetV2)
+   │
+Sequence Modeling with BiLSTM
+   │
+Weighted Temporal Attention
+   │
+Sigmoid Classifier → [0 (Real), 1 (Fake)]
 
 
----
+
 
 ## 🚀 Getting Started
 
@@ -64,8 +65,13 @@ cd Custom-Deepfake-Detection-Model
 2. Install dependencies
 
 pip install -r Requirements.txt
+
 3. Run Training
-b
+
+
 python train.py
+
+
 4. Run Evaluation
+
 python utils/evaluate.py
