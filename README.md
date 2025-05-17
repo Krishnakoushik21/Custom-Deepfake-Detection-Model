@@ -29,3 +29,43 @@ Sequence Modeling with BiLSTM
 Weighted Temporal Attention
    │
 Sigmoid Classifier → [0 (Real), 1 (Fake)]
+
+
+
+## 📁 Project Structure
+
+.
+├── DATA/
+│ ├── FAKE/ # Sample deepfake videos
+│ └── REAL/ # Sample authentic videos
+├── model/
+│ ├── cnn_extractor.py
+│ ├── bilstm_attention.py
+│ └── model_wrapper.py
+├── preprocessing/
+│ ├── face_detector.py
+│ └── align_crop.py
+├── utils/
+│ ├── metrics.py
+│ └── evaluate.py
+├── train.py # Training script
+├── Requirements.txt # Dependencies
+├── README.md # Project documentation
+
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+git clone https://github.com/Krishnakoushik21/Custom-Deepfake-Detection-Model.git
+cd Custom-Deepfake-Detection-Model
+2. Install dependencies
+
+pip install -r Requirements.txt
+3. Run Training
+b
+python train.py
+4. Run Evaluation
+python utils/evaluate.py
